@@ -1,6 +1,7 @@
 // App has radio buttons and drop downs
 //static "select" drop downs
 //website : https://rahulshettyacademy.com/loginpagePractise/
+//this website uses separate username and password printed on the webpage itself.
 
 // Test
 const { test, expect} = require('@playwright/test');

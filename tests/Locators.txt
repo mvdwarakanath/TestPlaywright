@@ -1,0 +1,12 @@
+Id attribute
+css --> tagname#id  ; e.g input#id
+
+name
+css --> [name='username']
+
+class attributes --> tagname.class   ; e.g input.form-control ; e.g. select.form-control // makes it unique
+
+css on any attribute 
+css --> [attribute='value']
+
+locator().type("learning")    ;;; // type has been deprecated , use fill

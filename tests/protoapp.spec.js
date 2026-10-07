@@ -11,8 +11,8 @@ test.only('Protoapp Playwright test', async ({ page}) => {
     //password = Learning@830$3mK2
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
     console.log(await page.title());
-    const userName = page.locator("#username");
-    const password = page.locator("[type='password']");
+    //const userName = page.locator("#username");
+    //const password = page.locator("[type='password']");
     const dropdown = page.locator("select.form-control");
     await dropdown.selectOption("consult");
     await page.locator(".radiotextsty").last().click();

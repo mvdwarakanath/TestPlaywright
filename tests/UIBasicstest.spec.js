@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test.only('Browser Context First Playwright test', async ({ browser}) =>
+test('Browser Context First Playwright test', async ({ browser}) =>
     {
 
     //playwright code 
@@ -38,7 +38,7 @@ test.only('Browser Context First Playwright test', async ({ browser}) =>
 
 });
 
-test('Page Playwright test', async({page}) =>
+test.only('Page Playwright test', async({page}) =>
 {
     await page.goto("https://google.com/");
     console.log(await page.title());

@@ -18,9 +18,15 @@ test.only('Protoapp Playwright test', async ({ page}) => {
     await dropdown.selectOption("consult");
     await page.locator(".radiotextsty").last().click();
     await page.locator("#okayBtn").click();
-
+    console.log(await page.locator(".radiotextsty").last().isChecked());
+    await expect(page.locator(".radiotextsty").last()).toBeChecked();
+    await page.locator("#terms").click();
+    await expect(page.locator("#terms")).toBeChecked();
+    //await page.pause();
+    await page.locator("#terms").uncheck();
+    expect(await page.locator("#terms").isChecked()).toBeFalsy();
     //assetion - if something fails it pauses
-    await page.pause();   // pauses quick operation of browser ; playwright inspector opened. ; useful for debugging
+    //await page.pause();   // pauses quick operation of browser ; playwright inspector opened. ; useful for debugging ;not necessary if assertion is used
 
 
 })

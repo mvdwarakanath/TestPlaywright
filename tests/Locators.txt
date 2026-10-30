@@ -1,5 +1,7 @@
+Locators are used to identify html component on a webpage
+
 Id attribute
-css --> tagname#id  ; e.g input#id
+css --> tagname#id  ; e.g input#id OR #id
 
 name
 css --> [name='username']
@@ -7,6 +9,15 @@ css --> [name='username']
 class attributes --> tagname.class   ; e.g input.form-control ; e.g. select.form-control // makes it unique
 
 css on any attribute 
-css --> [attribute='value']
+css --> tagname[attribute='value']       ### tagname is optional
+
+Write CSS with traversing from Parent to child e.g. locator(".user__name [type='text']")
+css -> parenttagname >> childtagname
+
+If needs to write the locator based on text
+text=''
+
+psuedo class given by Playwright documentation "h3:has-text('ZARA COAT 3')"
+
 
 locator().type("learning")    ;;; // type has been deprecated , use fill

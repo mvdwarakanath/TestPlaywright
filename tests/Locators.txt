@@ -21,3 +21,9 @@ psuedo class given by Playwright documentation "h3:has-text('ZARA COAT 3')"
 
 
 locator().type("learning")    ;;; // type has been deprecated , use fill
+
+------------------------------------------------------------
+TIMEOUTS
+1. Global - defined in playwright.config.js
+2. Test level - defined at beginning of Test
+3. Step level - At a particular step level 
